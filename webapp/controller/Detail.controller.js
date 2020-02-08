@@ -25,7 +25,7 @@ sap.ui.define([
 		this.getView().bindElement({
 			path: "/" + objectPath,
 			parameters: {
-				expand: "Supplier,SubCategory"
+				expand: "Supplier"
 			},
 			events: {
 				change: function() {
@@ -56,9 +56,9 @@ sap.ui.define([
 		const supplierId = bindingContext.getProperty("SupplierId");
 
 		ownerComponent.fireEvent("toSupplier", {
-			supplierID: supplierID,
+			supplierId: supplierId,
 			supplierKey: encodeURIComponent("/" + model.createKey("Suppliers", {
-				SupplierId: supplierId
+				Id: supplierId
 			}))
 		});
 	};

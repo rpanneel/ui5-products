@@ -1,11 +1,11 @@
 sap.ui.define(
-	["be/rpan/epm/suppliers/base/BaseComponent", "sap/ui/core/Component"],
+	["be/rpan/epm/products/base/BaseComponent", "sap/ui/core/Component"],
 	function(BaseComponent, Component) {
 		"use strict";
 
 		const ProductsComponent = BaseComponent.extend(
-			"be.rpan.epm.suppliers.Component",
-			/** @lends be.rpan.epm.suppliers.Component.prototype */ {
+			"be.rpan.epm.products.Component",
+			/** @lends be.rpan.epm.products.Component.prototype */ {
 				metadata: {
 					manifest: "json"
 				}

@@ -5,4 +5,6 @@ sap.ui.define([
 
 	const AppController = Controller.extend("be.rpan.epm.products.controller.App", /** @lends be.rpan.epm.products.controller.App.prototype */{
 	});
+
+	return AppController;
 });
